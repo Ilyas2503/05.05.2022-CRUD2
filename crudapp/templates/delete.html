@@ -1,0 +1,11 @@
+<h1>username : {{ comments.author }}</h1>
+<hr>
+<p> {{ comments.message }}</p>
+<span> publish_date :
+    {{ comments.punish_date }} </span>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">delete</button>
+
+</form>

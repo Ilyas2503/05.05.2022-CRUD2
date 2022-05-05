@@ -1,0 +1,5 @@
+{% for comment in comments %}
+    <h1>username : {{ comment.author }}</h1>
+    <hr>
+    <p> {{ comment.message }}</p> <span> publish_date : {{ comment.punish_date }} </span>
+{% endfor %}
